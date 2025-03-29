@@ -1,0 +1,157 @@
+word,response,cost,win
+Cup,Shield,4,1.0
+Lava,Feather,1,0.0
+Lava,Paper,2,0.0
+Lava,Virus,2,0.0
+Lava,Tsunami,18,1.0
+Lion,Gun,5,1.0
+Lava,Paper,2,0.0
+Darkness,Gun,5,0.0
+Torch,Shield,4,1.0
+River,Gun,5,0.0
+House,Water,3,0.0
+Thief,Tsunami,18,1.0
+Heart,Feather,1,0.0
+Love,Vaccine,9,0.0
+Parasite,Peace,14,0.0
+Rifle,Neutron Star,26,1.0
+Cup,Vaccine,9,0.0
+Cup,Feather,1,0.0
+Cup,Neutron Star,26,1.0
+Cup,Paper,2,0.0
+Cup,Tsunami,18,1.0
+Cup,Water,3,1.0
+Cup,Gun,5,1.0
+Cup,Shield,4,1.0
+Candy,Paper,2,1.0
+Candy,Feather,1,0.0
+Candy,Virus,7,1.0
+Candy,Peace,14,1.0
+Candy,Water,3,1.0
+Candy,Neutron Star,26,1.0
+Candy,Paper,2,1.0
+Lava,Feather,1,0.0
+Lava,Virus,7,0.0
+Lava,Peace,14,0.0
+Lava,Water,3,1.0
+Animal,Peace,14,0.0
+Animal,Water,3,0.0
+Animal,Neutron Star,26,1.0
+Animal,Paper,2,0.0
+Lion,Feather,1,0.0
+Lion,Virus,7,1.0
+Lion,Peace,14,0.0
+Lion,Water,3,0.0
+Lion,Neutron Star,26,1.0
+Cat,Paper,2,0.0
+Cat,Feather,1,0.0
+Cat,Virus,7,1.0
+Cat,Peace,14,0.0
+Cat,Water,3,1.0
+Lava,Vaccine,9,0.0
+Lava,Shield,4,0.0
+Lava,Gun,5,0.0
+Lava,Neutron Star,26,1.0
+Lava,Peace,14,0.0
+Lava,Tsunami,18,1.0
+Lava,Vaccine,9,0.0
+Metal,Paper,2,0.0
+Metal,Gun,5,1.0
+Metal,Neutron Star,26,1.0
+Metal,Peace,14,0.0
+Metal,Tsunami,18,1.0
+Cat,Gun,5,1.0
+Cat,Neutron Star,26,1.0
+Cat,Tsunami,18,1.0
+Cat,Vaccine,9,1.0
+Cat,Shield,4,1.0
+Cup,Peace,14,1.0
+Cup,Virus,7,0.0
+Cup,Vaccine,9,0.0
+Cup,Neutron Star,26,1.0
+Cup,Feather,1,0.0
+Cup,Peace,14,0.0
+Computer,Shield,4,0.0
+Computer,Gun,5,1.0
+Computer,Neutron Star,26,1.0
+Lion,Tsunami,18,1.0
+Lion,Vaccine,9,0.0
+Mouse,Peace,14,1.0
+Mouse,Neutron Star,26,1.0
+Mouse,Tsunami,18,1.0
+Mouse,Paper,2,0.0
+Website,Peace,14,
+Heart,Magma,14,1.0
+Heart,Shadow,7,0.0
+Heart,Sword,4,1.0
+Heart,Tectonic Shift,21,1.0
+Heart,Leaf,2,0.0
+Mouse,Earth,17,1.0
+Mouse,Human Spirit,23,1.0
+Mouse,Shadow,7,1.0
+Keyboard,Time,8,0.0
+Keyboard,Tectonic Shift,21,1.0
+Sand,Earth,17,1.0
+Sand,Human Spirit,23,1.0
+Sand,Leaf,2,0.0
+Stick,Shadow,7,0.0
+Stick,Tectonic Shift,21,1.0
+Stick,Time,8,1.0
+Plant,Earth,17,1.0
+Plant,Human Spirit,23,1.0
+Plant,Leaf,2,0.0
+Dust,Stone,11,1.0
+Ash,Leaf,2,1.0
+Moss,Volcano,16,1.0
+Candle,Cure,6,1.0
+Chalk,Sword,4,1.0
+Glass,Whale,17,1.0
+Dew,Stone,11,1.0
+Hail,Leaf,2,0.0
+Parasite,Volcano,16,1.0
+Luck,Human Spirit,23,1.0
+Tornado,Coal,1,0.0
+Marble,Twig,3,0.0
+Reflection,Stone,11,1.0
+Lightning,Sword,4,0.0
+Frost,Peace,14,1.0
+Atomic Bomb,Leaf,2,0.0
+Forest,Volcano,16,1.0
+Galaxy,Twig,3,0.0
+Hurricane,Stone,11,0.0
+Hypernova,Human Spirit,23,1.0
+Mantle,Time,8,0.0
+Comet,Leaf,2,0.0
+Wisdom,Volcano,16,1.0
+Conflict,Whale,17,1.0
+house,Earth's Core,25,1.0
+stick,Twig,3,1.0
+broom,Leaf,2,0.0
+cup,Magma,14,1.0
+Dog,Time,8,1
+Floor,Cure,6,0
+Mouse,Coal,1,0
+Spade,Volcano,16,1
+Sun,Earth's Core,25,0
+Sun,Paper,2,0
+Sun,Time,8,1
+Marker,Cure,6,1
+Pencil,Twig,3,1
+Glasses,Volcano,16,1
+Victory,Twig,3,0
+God,Coal,1,0
+Enigma,Earth's Core,25,1
+Alien,Magma,14,1
+Dust,Virus,7,1
+Ferris Wheel,Tectonic Shift,21,1
+Rhinocerous,Vaccine,9,1
+Country,Cure,6,1
+Hair,Earth's Core,25,1
+Sprinkler,Magma,14,1
+Bottle,Coal,1,0
+Sprinkler,Sword,4,1
+Webcam,Leaf,2,1
+Whiteboard,Vaccine,9,0
+Whiteboard,Earth's Core,25,1
+Box,Whale,17,1
+Reference,Magma,14,1

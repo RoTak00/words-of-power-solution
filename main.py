@@ -29,19 +29,21 @@ def get_vector(word):
         return np.zeros(300)
     
     # Load CSV
-df = pd.read_csv("word_mappings4.csv")
+df = pd.read_csv("word_mappings.csv")
 
 # Encode input and response
-X = np.stack(df["word"].apply(get_vector))
-label_encoder = LabelEncoder()
-y_labels = label_encoder.fit_transform(df["response"])
-y_encoded = to_categorical(y_labels)
+if embeddings is not None:
+    X = np.stack(df["word"].apply(get_vector))
+    label_encoder = LabelEncoder()
+    y_labels = label_encoder.fit_transform(df["response"])
+    y_encoded = to_categorical(y_labels)
 
 with open('words.json', 'r', encoding='utf-8') as f:
     data = json.load(f)
     labeled_words = {int(k): v for k, v in data.items()}
 
-model = load_model('my_model.keras')
+if embeddings is not None:
+    model = load_model('model.keras')
 
 
 def Catchup(word, labeled_words, history):
@@ -168,6 +170,7 @@ def play_game(player_id):
             print(response.json())
             sys_word = response.json()['word']
             round_num = response.json()['round']
+
             sleep(1)
 
         if round_id > 1:
@@ -209,18 +212,24 @@ def play_game(player_id):
             
             if lowest_winner is not None:
                 id = lowest_winner['id']
+                print("Found Old Lowest Winner")
             
-            # if lowest_winner is None:
-            #     highest_loser = find_highest_loser(data)
+            if lowest_winner is None:
+                highest_loser = find_highest_loser(data)
 
-            #     highest_loser_cost = highest_loser['cost']
+                highest_loser_cost = highest_loser['cost']
 
-            #     new_cost = highest_loser_cost + INC_COST
+                new_cost = highest_loser_cost + INC_COST
 
-            #     # find an item in labeled_words with this cost 
-            #     for entry in labeled_words:
-            #         if labeled_words[entry]['cost'] == new_cost:
-            #             lowest_winner = 
+                # find an item in labeled_words with this cost 
+                for idx, entry in labeled_words:
+                    if(entry['cost'] == new_cost):
+                        id = idx
+
+                        print("Found Old Highest Loser")
+                        break
+            
+            print(id)
 
         if id is None:
 
@@ -228,22 +237,27 @@ def play_game(player_id):
 
             if embeddings is not None and score_difference > 0:
                 response = predict_response(sys_word, labeled_words, model)
+                print("Prediction")
             
                 if response is None:
                     id, word = Catchup(sys_word, labeled_words, history)
+                    print("Catchup")
                 else:
                     id = response[0]
                     word = response[1]
             else:
                 id, word = Catchup(sys_word, labeled_words, history)
+                print("Catchup")
             
             print(word)
 
         if sys_word == 'Mihai':
             id = 1
+            print("Mihai")
 
         print(id)
         data = {"player_id": player_id, "word_id": id, "round_id": round_id}
+        
         response = requests.post(post_url, json=data)
         print(response.json())
 
