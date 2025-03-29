@@ -1,4 +1,4 @@
 id,word,response,cost,win
-55,Drum,Human Spirit,23,False
-28,Drum,Robots,10,False
+55,Drum,Human Spirit,23,True
+28,Drum,Robots,10,True
 38,Grenade,Peace,14,True

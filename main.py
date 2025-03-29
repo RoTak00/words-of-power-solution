@@ -42,9 +42,12 @@ with open('words.json', 'r', encoding='utf-8') as f:
     data = json.load(f)
     labeled_words = {int(k): v for k, v in data.items()}
 
+model = None
 if embeddings is not None:
-    model = load_model('model.keras')
-
+    try:
+        model = load_model('model.keras')
+    except:
+        pass
 
 def Catchup(word, labeled_words, history):
 
@@ -171,7 +174,7 @@ def play_game(player_id):
             sys_word = response.json()['word']
             round_num = response.json()['round']
 
-            sleep(1)
+            sleep(0.25)
 
         if round_id > 1:
             status = requests.get(status_url)
@@ -235,7 +238,7 @@ def play_game(player_id):
 
             score_difference = calc_score_difference(history)
 
-            if embeddings is not None and score_difference > 0:
+            if embeddings is not None and model is not None and score_difference > 0:
                 response = predict_response(sys_word, labeled_words, model)
                 print("Prediction")
             
